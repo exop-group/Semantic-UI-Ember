@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import Semantic from '../semantic';
-import $ from 'jquery';
+import jQuery from 'jquery';
 
 const EMBER_ATTRS = ['class', 'classNameBindings', 'classNames', 'tagName'];
 const HTML_ATTRS = ['id', 'name', 'readonly', 'autofocus', 'tabindex', 'title'];
@@ -117,7 +117,7 @@ Semantic.BaseMixin = Ember.Mixin.create({
       return;
     }
     let moduleName = this.getSemanticModuleName();
-    return $.fn[moduleName];
+    return jQuery.fn[moduleName];
   },
 
   willInitSemantic(settings) { // eslint-disable-line no-unused-vars
